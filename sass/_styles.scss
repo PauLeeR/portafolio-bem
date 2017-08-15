@@ -1,0 +1,109 @@
+.menu{
+	background-color: $rojo;
+	display: inline-block;
+	text-align: center !important;
+	margin: 0px;
+	padding: 10px;
+	width: 100%;
+}
+
+.menu__item{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 25px;
+	color: white;
+}
+
+.menu__item__link{
+	color: white;
+	text-decoration: none;
+	&:hover{
+		background-color: $azul;
+		border-radius: 20px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
+
+.menu__pic{  //css shapes para poner redonda la la img del logo
+	width: 70px; 
+	height: 70px;
+	background: white; 
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px; 
+	border-radius: 50px;
+	margin-top: 0px;
+	margin-bottom: -30px;
+	border: 4px solid black;
+}
+
+/*seccion profile*/
+#profile{
+	height: 150px;
+	padding-top: 60px;
+	padding-bottom: 50px;
+
+	.profile__pic{
+		width: 200px; 
+		height: 200px; 
+		background: $white; 
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px; 
+		border-radius: 100px;
+		margin-left: 450px;
+	}
+	.profile__info{
+		width: 50%;
+		margin: 0px auto;
+		padding: 0px;
+		box-sizing: border-box;
+		margin-right: 0px;
+		margin-top: -220px;
+		color: $white;
+		padding-right: 20px;
+
+		h2{
+			color: $verde;
+		}
+		.profile__btn{
+			background-color: $verde;
+			padding: 15px;
+			font-size: 16px;
+			width: 180px;
+			color: #fff;
+			border-radius: 50px;
+			border: none;
+			cursor: pointer;
+			&:hover{
+				background-color: $rojo;
+				opacity: 0.7 !important;
+				filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+				box-shadow: 0 0 0px #000000 !important;
+			}
+		}
+	}
+}
+
+.socials{
+	text-align: center;
+
+	.socials__ul__li{
+		display: inline-block;
+		list-style: none;
+		margin-top: 70px;
+		&:hover{
+			cursor: pointer;
+			background-color: $white;
+		}
+
+		img{
+			width: 50px;
+			height: 50px;
+			padding: 5px 5px 0px 5px;
+		}
+
+	}
+}
